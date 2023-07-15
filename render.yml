@@ -2,3 +2,12 @@ services:
   - type: web
     name: fresh
     runtime: docker
+    plan: free
+    disk:
+      name: fresh-data
+      mountPath: /config
+      sizeGB: 5
+
+databases:
+  - name: db
+    databaseName: fresh
