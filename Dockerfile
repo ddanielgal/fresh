@@ -3,3 +3,4 @@ ENV PUID=1000
 ENV PGID=1000
 ENV TZ=Europe/Berlin
 EXPOSE 80
+RUN cp /config.default.php /app/www/data/config.default.php
